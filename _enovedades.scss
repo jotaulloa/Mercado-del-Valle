@@ -1,0 +1,115 @@
+/*Contenido Novedades*/
+
+.grid{
+    display: grid;
+    grid-template-areas: "head head"
+    "nov estacion"
+    "subtitulo subtitulo"
+    "recver recfru"
+    "foot foot";
+    grid-template-rows: auto 0.8fr 0.1fr 2.5fr auto;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+}
+
+.border{
+    border: 1px solid black;
+}
+
+.head{
+    grid-area: head;
+}
+.foot{
+    grid-area: foot;
+}
+.nov{
+    grid-area: nov;
+    background-color: rgb(11, 146, 146);
+}
+.estacion{
+    grid-area: estacion;
+    background-image: url(/multimedia/FrutVER.jpg);
+    background-size: cover;
+    display: flex;
+    flex-flow: row wrap;
+    padding: 10px;
+}
+.subtitulo{
+    grid-area: subtitulo;
+    text-align: center;
+    font-size: 30px;
+    background-color: #1b9622f6;
+    color: white;
+    text-decoration: transparent;
+}
+.recver{
+    grid-area: recver;
+    background-color: crimson;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+}
+.recfru{
+    grid-area: recfru;
+    background-color: rgb(40, 20, 220);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+}
+.tit{
+    color: rgb(245, 245, 11);
+    text-decoration: bold;
+    text-align: center;
+}
+
+.block1{
+    text-align: center;
+    border: 1px solid black;
+    background-color: white;
+    margin: 15px;
+    padding: 10px;
+}
+
+.block2{
+    text-align: center;
+    border: 1px solid black;
+    background-color: white;
+    margin: 15px;
+    padding: 10px;
+}
+
+.estacion h1{
+    text-transform: uppercase;
+    border: 1px solid black;
+    background-color: rgb(170, 138, 201);
+    text-align: center;
+    align-self: center;
+    padding: 20px;
+}
+
+.estacion h2{
+    text-transform: uppercase;
+    border: 1px solid black;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    align-self: center;
+    padding: 20px;
+}
+
+.estacion p{
+    border: 1px solid black;
+    background-color: rgba(255, 255, 255, 0.7);
+    text-align: justify;
+    align-self: center;
+    padding: 10px;
+}
+
+.recver h2{
+    text-align: center;
+    color: white;
+}

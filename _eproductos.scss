@@ -1,0 +1,47 @@
+/*Variables*/
+
+$colores: red,
+black,
+blue,
+orange;
+
+@mixin sizes ($width, $hight, $marleft, $marright) {
+    height: $hight;
+    width: $width;
+    margin-left: $marleft;
+    margin-right: $marright;
+}
+
+/*Contenido Productos*/
+
+.sec10{
+    background-color: white;
+}
+
+.sec10 h1{
+    text-transform: uppercase;
+    text-decoration-style: solid;
+    text-align: center;
+    color: rgb(216, 94, 49);
+    text-decoration-line: underline;
+    font-family: 'Pacifico', cursive;
+}
+
+.sec20{
+    background-image: url("multimedia/FrutVER.jpg");
+    display: flex;
+    justify-content: space-around;
+}
+
+.sec20 img{
+    flex-grow: 0.9;
+}
+
+@each $color in $colores {
+    .color-#{$color} {
+        border: 2px solid $color;
+        background-color: $color;
+        @include sizes(auto, 20px, 5px, 5px)
+    }
+}
+

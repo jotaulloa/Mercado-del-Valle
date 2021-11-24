@@ -1,0 +1,81 @@
+/*Estilo Contacto*/
+
+.grid1{
+    display: grid;
+    grid-template-areas: "head head head"
+    "ubi ubi contacto"
+    "ubi ubi contacto"
+    "foot foot foot";
+    grid-template-rows: auto 1fr 1fr auto;
+    grid-template-columns: auto auto  1fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+}
+
+.border1{
+    border: 1px solid black;
+}
+
+.head1{
+    grid-area: head;
+}
+.foot1{
+    grid-area: foot;
+}
+.ubi{
+    grid-area: ubi;
+    text-align: center;
+    text-transform: uppercase;
+    color: green;
+    background-color: white ;
+    display: grid;
+    grid-template-areas: "cor cor"
+    "mapa mapa"
+    "mapa mapa"
+    "dir foto";
+    grid-template-rows: 50px 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 10px;
+    grid-column-gap: 10px;
+    margin-left: 5px;
+}
+
+.cor{
+    grid-area: cor;
+    font-family: sans-serif;
+    text-decoration: underline;
+    text-align: center;
+    margin-top: 5px;
+}
+.mapa{
+    grid-area: mapa;
+    justify-self: center;
+    align-self: center;
+}
+.dir{
+    grid-area: dir;
+    justify-self: center;
+    align-self: center;
+}
+.foto{
+    grid-area: foto;
+    justify-self: center;
+    align-self: center;
+}
+
+.contacto1{
+    grid-area: contacto;
+    padding: 10px;
+    background-image: radial-gradient(rgb(223, 217, 217) 10%, #518b6c,  #9dada5);
+    border: 5px solid black;
+    height: 100%;
+}
+
+.contacto1 .form{
+    padding: 10% 5% 10px 5%;
+}
+.contacto1 form strong{
+    background-color: tomato;
+    text-align: center;
+    font-size: 26px;
+}

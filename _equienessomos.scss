@@ -1,0 +1,32 @@
+/*Variables*/
+
+
+
+/*Contenido Quienes Somos*/
+
+.quiSom{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    height: auto;
+    align-items: center;
+}
+
+.quiSom h1{
+    color: rgb(26, 151, 26);
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 50px;
+}
+
+.sec6{
+    align-self: center;
+}
+
+.sec6 p{
+    padding: 10%;
+    text-align: justify;
+    font-family: 'Cherry Cream Soda', cursive;
+    font-size: 18px;
+}
+

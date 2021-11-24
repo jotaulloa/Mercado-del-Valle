@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="estilos.css">
+    <meta name="description" content="Venta de frutas y verduras, por mayor o menor con distribución domiciliaria en toda la ciudad de Córdoba y gran Córdoba. Incorporando localidades cercanas como Calera y Carlos Paz">
+    <meta name="keywords" content="frutas, verduras, vegetales, frutos secos, frutos, cosalta, badia, dietetica, cercanía, compras, abastecimiento, servicio, distribucion">
+    <meta name="author" content="Jorge Ulloa">
+    <meta name="title" content="Contacto - Vias de comunicacion y locacion de nuestro punto de venta">
+    <meta name="ROBOTS" content="ALL">
+    <meta name="revisit-after" content="All Days">
+    <meta name="language" content="Spanish">
+    <meta name="city" content="Cordoba">
+    <meta name="country" content="Argentina">
+    <meta name="resource-type" content="Document">
+    <meta name="doc-type" content="Web Page">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
+</head>
+
+<body class="grid1">
+
+    <header class="head1" id="header">
+        <div class="conteiner-fluid">
+            <span><img src="multimedia/Logo1VerdeC.PNG" alt="" width="10px" height="20px">
+                <div>
+                    <h1> Bienvenido a MERCADO DEL VALLE</h1>
+                    <h3> Hacenos tu pedido,<br> Y RECIBILO EN TU DOMICILIO.</h3>
+                </div>
+            </span>
+
+            <nav class="menu navbar navbar-expand-lg navbar-light bg-light">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03"
+                    aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html">Inicio <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="Novedades.html">Novedades</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="QuienesSomos.html">Quienes Somos</a>
+                        </li>
+                        <li class="nav-item active"><a class="nav-link dropdown-toggle" href="Productos.html"
+                                id="navbardrop" data-toggle="dropdown">Productos</a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="Productos.html">Verduras, Frutas y Otros</a>
+                                <a class="dropdown-item" href="Productos.html">Complementos y Dietetica</a>
+                            </div>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="Contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <div class="ubi border1">
+        <h1 class="cor">cordoba - capital</h1>
+        <iframe class="mapa"
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13625.468538790103!2d-64.256533!3d-31.3764389!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x5ed23b20f0a22b9f!2sMercado%20del%20Valle!5e0!3m2!1ses-419!2sar!4v1634597207292!5m2!1ses-419!2sar"
+            width="685" height="450" style="border: 5px solid black;" allowfullscreen="" loading="lazy">
+        </iframe><br>
+        <img class="dir" src="multimedia/infoubicacion.PNG" alt="" width="350">
+        <img class="foto" src="multimedia/MDV.PNG" alt="" width="300">
+    </div>
+
+
+    <div class="contacto1 border1">
+        <form class="form" action="enviar.php" method="POST" enctype="application/x-www-form-urlencoded">
+            <STRong><Em>¡¡Dejanos tus datos, y forma parte de la comunidad MdeV!!</Em></STRong><br><br>
+            Nombre y Apellido: <br> <input type="text" placeholder="Escribir..." required><br>
+            Dirección: <br> <input type="text" placeholder="Escribir..." required><br>
+            Telefono: <br> <input type="tel" placeholder="Escribir..." required><br>
+            Mail: <br> <input type="email" placeholder="Escribir..." required><br>
+            <br>
+            Horario de Contacto: <select name="" id="">
+                <option>Mañana (de 09 hs a 12 hs)</option>
+                <option>Tarde (de 12 hs a 17 hs)</option>
+                <option>Noche (de 17 hs a 19 hs)</option>
+            </select><br>
+            <br>
+            <h4>Que informacion te interesaria recibir:</h4>
+            Lista de Precios <input type="checkbox"><br>
+            Promociones <input type="checkbox"><br>
+            Novedades <input type="checkbox"><br>
+            <br>
+            <input type="submit" value="Enviar"><br>
+            <input type="reset" value="Borrar">
+        </form>
+    </div>
+
+    <footer class="foot1 border1 container-fluid row">
+        <div class="div1">
+            <ul>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li>info@mercadodelvalle.com.ar</li>
+                <li>351-5142122</li>
+                <li><a href="#header">Subir</a></li>
+            </ul>
+        </div>
+        <div class="div2">
+            <img src="/multimedia/Logo1Blanco.PNG" alt="" width="500px">
+            <p>Copyright © 2021 Mercado del Valle. Todos los derechos reservados.</p>
+        </div>
+        <div class="div3">
+            <ul>
+                <li id="home"><a href="index.html">Inicio</a></li>
+                <li id="finger"><a href="Novedades.html">Novedades</a></li>
+                <li id="ask"><a href="QuienesSomos.html">Quienes Somos</a></li>
+                <li id="pr"><a href="Productos.html">Productos</a>
+                <li id="maletin"><a href="#queresnuestros">¿Queres nuestros Servicios?</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"
+        integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

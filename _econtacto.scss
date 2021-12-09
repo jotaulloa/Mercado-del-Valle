@@ -12,6 +12,20 @@
     grid-row-gap: 10px;
 }
 
+@media screen and (max-width: 769px){
+    .grid1{
+        display: grid;
+        grid-template-areas: "head"
+        "contacto"
+        "ubi"
+        "foot";
+        grid-template-rows: auto 1fr 1fr auto;
+        grid-template-columns: auto;
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
+    }
+}
+
 .border1{
     border: 1px solid black;
 }
@@ -78,4 +92,11 @@
     background-color: tomato;
     text-align: center;
     font-size: 26px;
+    color: black;
+}
+
+.contacto1 form{
+    font-size: 20px;
+    font-style: italic;
+    text-shadow: 1px 1px darkblue;
 }

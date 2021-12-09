@@ -327,52 +327,84 @@ footer {
   }
 }
 
+/*Reseteo*/
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 /*Variables*/
 /*Inicio*/
-main {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+/* main{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+} */
+.container-fluid {
+  margin: 5px;
+  padding: 5px;
 }
 
 .sec1 {
-  height: auto;
+  height: hight;
   -ms-flex-line-pack: center;
       align-content: center;
-  margin-bottom: 10px;
-  margin-top: 10px;
+  margin-left: 5px;
   margin-right: 5px;
 }
 
 .sec1--fondo {
-  height: 450px;
-  background-image: url(/multimedia/Imagen.jpg);
+  height: auto;
+  background-image: url(multimedia/Imagen.jpg);
   background-repeat: space;
 }
 
 .sec1__h1--formato {
-  height: 112.5px;
+  height: auto/2;
   border: 1px solid black;
   background-color: white;
-  margin: 45px 500px 55px 20px;
+  margin: 5% 50% 10% 5%;
+  padding: 2%;
   text-align: center;
   text-transform: uppercase;
   font-family: 'Bebas Neue', cursive;
   font-size: 40px;
+  -ms-flex-line-pack: center;
+      align-content: center;
   -webkit-animation-name: titulo;
           animation-name: titulo;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
   -webkit-animation-direction: alternate;
           animation-direction: alternate;
+}
+
+@media only screen and (max-width: 769px) {
+  .sec1__h1--formato {
+    height: auto/2;
+    border: 1px solid black;
+    background-color: white;
+    margin: 5%;
+    padding: 2%;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 40px;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -webkit-animation-name: titulo;
+            animation-name: titulo;
+    -webkit-animation-duration: 2s;
+            animation-duration: 2s;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+            animation-direction: alternate;
+  }
 }
 
 @-webkit-keyframes titulo {
@@ -412,7 +444,7 @@ main {
 }
 
 .sec1__block--formato {
-  height: 225px;
+  height: auto;
   border: 1px solid black;
   background-color: rgba(255, 255, 255, 0.9);
   font-family: 'Roboto', sans-serif;
@@ -429,12 +461,10 @@ main {
 
 .sec2 {
   text-align: center;
-  margin-bottom: 10px;
-  margin-top: 10px;
 }
 
 .sec2--fondo {
-  height: 450px;
+  height: auto;
   background-color: lightblue;
   padding: 10px;
   text-align: center;
@@ -454,6 +484,7 @@ main {
   font-size: 16px;
 }
 
+/*Variables*/
 /*Contenido Quienes Somos*/
 .quiSom {
   display: -webkit-box;
@@ -502,6 +533,20 @@ main {
       grid-template-columns: 1fr 1fr;
   grid-column-gap: 10px;
   grid-row-gap: 10px;
+}
+
+@media screen and (max-width: 769px) {
+  .grid {
+    display: -ms-grid;
+    display: grid;
+        grid-template-areas: "head" "nov" "estacion" "subtitulo" "recver" "recfru" "foot";
+    -ms-grid-rows: auto 0.8fr 0.8fr 0.1fr 2.5fr 2.5fr auto;
+        grid-template-rows: auto 0.8fr 0.8fr 0.1fr 2.5fr 2.5fr auto;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+  }
 }
 
 .border {
@@ -632,6 +677,8 @@ main {
       -ms-grid-row-align: center;
       align-self: center;
   padding: 20px;
+  margin-right: 7.5%;
+  font-size: 30px;
 }
 
 .estacion h2 {
@@ -741,6 +788,20 @@ main {
   grid-row-gap: 10px;
 }
 
+@media screen and (max-width: 769px) {
+  .grid1 {
+    display: -ms-grid;
+    display: grid;
+        grid-template-areas: "head" "contacto" "ubi" "foot";
+    -ms-grid-rows: auto 1fr 1fr auto;
+        grid-template-rows: auto 1fr 1fr auto;
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+  }
+}
+
 .border1 {
   border: 1px solid black;
 }
@@ -846,5 +907,12 @@ main {
   background-color: tomato;
   text-align: center;
   font-size: 26px;
+  color: black;
+}
+
+.contacto1 form {
+  font-size: 20px;
+  font-style: italic;
+  text-shadow: 1px 1px darkblue;
 }
 /*# sourceMappingURL=estilos.css.map */

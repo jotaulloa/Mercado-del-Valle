@@ -13,6 +13,23 @@
     grid-row-gap: 10px;
 }
 
+@media screen and (max-width: 769px){
+    .grid{
+        display: grid;
+        grid-template-areas: "head"
+        "nov"
+        "estacion"
+        "subtitulo"
+        "recver"
+        "recfru"
+        "foot";
+        grid-template-rows: auto 0.8fr 0.8fr 0.1fr 2.5fr 2.5fr auto;
+        grid-template-columns: 1fr;
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
+    }
+}
+
 .border{
     border: 1px solid black;
 }
@@ -90,6 +107,8 @@
     text-align: center;
     align-self: center;
     padding: 20px;
+    margin-right: 7.5%;
+    font-size: 30px;
 }
 
 .estacion h2{

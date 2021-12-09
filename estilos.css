@@ -348,7 +348,7 @@ footer {
 }
 
 .sec1 {
-  height: hight;
+  height: auto;
   -ms-flex-line-pack: center;
       align-content: center;
   margin-left: 5px;
@@ -578,7 +578,8 @@ footer {
   -ms-grid-row: 2;
   -ms-grid-column: 2;
   grid-area: estacion;
-  background-image: url(/multimedia/FrutVER.jpg);
+  height: auto;
+  background-image: url(multimedia/FrutVER.jpg);
   background-size: cover;
   display: -webkit-box;
   display: -ms-flexbox;

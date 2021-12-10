@@ -7,12 +7,12 @@
     "ubi ubi contacto"
     "foot foot foot";
     grid-template-rows: auto 1fr 1fr auto;
-    grid-template-columns: auto auto  1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-column-gap: 10px;
     grid-row-gap: 10px;
 }
 
-@media screen and (max-width: 769px){
+@media screen and (max-width: 1025px){
     .grid1{
         display: grid;
         grid-template-areas: "head"

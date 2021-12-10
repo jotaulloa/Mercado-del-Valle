@@ -783,13 +783,13 @@ footer {
       grid-template-areas: "head head head" "ubi ubi contacto" "ubi ubi contacto" "foot foot foot";
   -ms-grid-rows: auto 1fr 1fr auto;
       grid-template-rows: auto 1fr 1fr auto;
-  -ms-grid-columns: auto auto  1fr;
-      grid-template-columns: auto auto  1fr;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
   grid-column-gap: 10px;
   grid-row-gap: 10px;
 }
 
-@media screen and (max-width: 769px) {
+@media screen and (max-width: 1025px) {
   .grid1 {
     display: -ms-grid;
     display: grid;
